@@ -19,23 +19,23 @@ int main () {
     int counter = 0;
 
     //prompt message
-    printf("0¨ì99¡A²q¤@­Ó¼Æ¦r¡C");
+    printf("0åˆ°99ï¼ŒçŒœä¸€å€‹æ•¸å­—ã€‚");
 
     //get input
     //continue if the input is integer
     while (scanf("%d", &guess)) {
         if (guess == answer) { //if you have got the answer
-            printf("§A²qªº¬O¡J%d¡A®¥³ß²q¤¤¤F¡C¤@¦@²q¤F%d¦¸¡C\n", guess, counter);
+            printf("ä½ çŒœçš„æ˜¯ï¸°%dï¼Œæ­å–œçŒœä¸­äº†ã€‚ä¸€å…±çŒœäº†%dæ¬¡ã€‚\n", guess, counter);
             return 0;
         } else { //go on if not correct
             counter++;
-            printf("§A²qªº¬O¡J%d¡A", guess);
+            printf("ä½ çŒœçš„æ˜¯ï¸°%dï¼Œ", guess);
             if (guess > answer) {
-                printf("§C¤@ÂI¡C");
+                printf("ä½ä¸€é»ã€‚");
             } else {
-                printf("°ª¤@ÂI¡C");
+                printf("é«˜ä¸€é»ã€‚");
             }
         }
     }
-    printf("§A¿é¤Jªº¤£¬O¼Æ¦r¡C");
+    printf("ä½ è¼¸å…¥çš„ä¸æ˜¯æ•¸å­—ã€‚");
 }
