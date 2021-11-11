@@ -1,41 +1,23 @@
-/*
- * the following code snippet is modified from this website
- * https://www.cplusplus.com/reference/cstdlib/rand/
- **/
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
-int main () {
+int main() {
 
-    //renew the seed of rand function
-    srand(time(NULL));
+    int a = 0;
+    int b = 0;
+    int c = 0;
+    int d = 0;
+    int e = 0;
 
-    //get the answer between 0 to 99
-    int answer = rand() % 100;
+    printf("請輸入五個數字，以空白隔開。\n");
+        scanf("%d %d %d %d %d",&a, &b, &c, &d, &e);
+    //add scanf code to get data from input
+    //and feed those input into a, b, c, d, e, respectively.
+    //only ONE line code is you need
+    //please refer page 18 of slides
 
-    //initialize
-    int guess = -1;
-    int counter = 0;
-
-    //prompt message
-    printf("0到99，猜一個數字。");
-
-    //get input
-    //continue if the input is integer
-    while (scanf("%d", &guess)) {
-        if (guess == answer) { //if you have got the answer
-            printf("你猜的是︰%d，恭喜猜中了。一共猜了%d次。\n", guess, counter);
-            return 0;
-        } else { //go on if not correct
-            counter++;
-            printf("你猜的是︰%d，", guess);
-            if (guess > answer) {
-                printf("低一點。");
-            } else {
-                printf("高一點。");
-            }
-        }
-    }
-    printf("你輸入的不是數字。");
+    printf("a=%d\n", a);
+    printf("b=%d\n", b);
+    printf("c=%d\n", c);
+    printf("d=%d\n", d);
+    printf("e=%d\n", e);
 }
